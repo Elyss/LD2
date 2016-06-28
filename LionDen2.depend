@@ -1,0 +1,113 @@
+# depslib dependency file v1.0
+1466848305 source:d:\code\lionden2\functions.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	"player.h"
+	"functions.h"
+
+1466694879 d:\code\lionden2\player.h
+	<iostream>
+	<string>
+
+1466754477 d:\code\lionden2\functions.h
+
+1466875878 source:d:\code\lionden2\player.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	"player.h"
+
+1466875844 source:d:\code\lionden2\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	"player.h"
+	"functions.h"
+
+1467130028 source:c:\users\bgadil-pc\code\lionden2\functions.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	<map>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467126150 c:\users\bgadil-pc\code\lionden2\player.h
+
+1467129997 c:\users\bgadil-pc\code\lionden2\functions.h
+
+1467126150 source:c:\users\bgadil-pc\code\lionden2\player.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	<map>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467130037 source:c:\users\bgadil-pc\code\lionden2\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	<algorithm>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467126150 source:c:\users\bgadil-pc\code\lionden2\attribute.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	<algorithm>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467126457 c:\users\bgadil-pc\code\lionden2\attribute.h
+

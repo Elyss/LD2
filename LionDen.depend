@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1466848305 source:d:\code\lionden\functions.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	"player.h"
+	"functions.h"
+
+1466694879 d:\code\lionden\player.h
+	<iostream>
+	<string>
+
+1466754477 d:\code\lionden\functions.h
+
+1466848602 source:d:\code\lionden\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	"player.h"
+	"functions.h"
+
+1466694831 source:d:\code\lionden\player.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	"player.h"
+
