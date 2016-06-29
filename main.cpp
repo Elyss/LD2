@@ -23,7 +23,6 @@ void afficher_map(map<string, Attribute>& m)
   map<string, Attribute>::iterator p; //Création d'un itérator sur le 'map'
   for(p = m.begin(); p != m.end(); p++)
   {
-    cout << p->first << " : ";
     p->second.display();
   }
 
