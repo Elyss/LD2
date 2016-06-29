@@ -111,7 +111,7 @@
 
 1467126457 c:\users\bgadil-pc\code\lionden2\attribute.h
 
-1467200452 source:c:\users\bgadil-pc\documents\github\ld2\main.cpp
+1467205561 source:c:\users\bgadil-pc\documents\github\ld2\main.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -128,14 +128,15 @@
 	"functions.h"
 	"attribute.h"
 
-1467200452 c:\users\bgadil-pc\documents\github\ld2\player.h
+1467204732 c:\users\bgadil-pc\documents\github\ld2\player.h
+	"attribute.h"
 
 1467200570 c:\users\bgadil-pc\documents\github\ld2\functions.h
 	"attribute.h"
 
-1467201161 c:\users\bgadil-pc\documents\github\ld2\attribute.h
+1467202470 c:\users\bgadil-pc\documents\github\ld2\attribute.h
 
-1467200452 source:c:\users\bgadil-pc\documents\github\ld2\player.cpp
+1467205051 source:c:\users\bgadil-pc\documents\github\ld2\player.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -149,7 +150,7 @@
 	"functions.h"
 	"attribute.h"
 
-1467200452 source:c:\users\bgadil-pc\documents\github\ld2\attribute.cpp
+1467205098 source:c:\users\bgadil-pc\documents\github\ld2\attribute.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -166,7 +167,7 @@
 	"functions.h"
 	"attribute.h"
 
-1467200760 source:c:\users\bgadil-pc\documents\github\ld2\functions.cpp
+1467206377 source:c:\users\bgadil-pc\documents\github\ld2\functions.cpp
 	<iostream>
 	<fstream>
 	<string>

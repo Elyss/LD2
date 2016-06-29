@@ -218,6 +218,8 @@ map<string, Attribute> load_attributes()
                     affinities = splitted[4];
                     disaffinities = splitted[5];
 
+                    cout<<m_ratio<<endl;
+
                                         //on crée un objet attribut avec et on le met dans une map de joueurs
                     Atemp = new Attribute(name,victory,defeat,m_ratio,affinities,disaffinities);
                     map_attribut[name]= *Atemp;
@@ -229,9 +231,35 @@ map<string, Attribute> load_attributes()
                 attr.close();  // on ferme le fichier
 
                 cout << "Base de donnée attributs chargée" << endl<< endl;
-                return map_attribut; //on renvoie au main le vecteur qui contient tous les joueurs en objet
+                return map_attribut; //on renvoie au main la map des attributs
 
         }
         else  // sinon
                 cout << "Impossible d'ouvrir le fichier attributs!" << endl;
 }
+
+/*
+void save_bdd(map<string,Attribute> attributs)
+    {
+        ofstream fichier_save("attributs.csv", ios::out | ios::trunc);
+            if(fichier_save)
+            {
+                for(int i=0; i < attributs.size();i++)
+                {
+                    string recompose = i_to_string(joueur[i].getId()) + ";" + joueur[i].getName() + ";" + f_to_string(joueur[i].getScore()) + ";" + i_to_string(joueur[i].getVictory()) + ";" + f_to_string(joueur[i].getDefeat()) + joueur[i].getAttributs();
+
+
+
+                    fichier_save << recompose << endl;
+                }
+
+                fichier_save.close();
+                cout << "Base mise a jour" <<endl;
+            }
+
+            else
+            {
+                cout << "echec de la sauvegarde" <<endl;
+            }
+
+*/

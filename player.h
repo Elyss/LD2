@@ -1,7 +1,7 @@
 #ifndef PLAYER_H_INCLUDED
 #define PLAYER_H_INCLUDED
 
-
+#include "attribute.h"
 
 class Player
 {
@@ -20,7 +20,7 @@ class Player
     //Methodes
 
     void victory(Player &adversary);
-    void stats() const;
+    void stats(std::map<std::string, Attribute> base_attributs) const;
 
     int getId() const;
     std::string getName() const;

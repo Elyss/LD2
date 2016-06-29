@@ -18,20 +18,30 @@
 
 using namespace std;
 
+void afficher_map(map<string, Attribute>& m)
+{
+  map<string, Attribute>::iterator p; //Création d'un itérator sur le 'map'
+  for(p = m.begin(); p != m.end(); p++)
+  {
+    cout << p->first << " : ";
+    p->second.display();
+  }
+
+}
 
 
 int main()
 {
 
     vector<Player> joueur = load_bdd(); //On charge la base de donnée dans un vecteur
+    map<string, Attribute> attributs = load_attributes();
 
-    map<string, Attribute> attribut = load_attributes();
+    afficher_map(attributs);
 
-    attribut["yeux verts"].stats();
 
     for(int i=0; i < joueur.size();i++)
     {
-        joueur[i].stats();
+        joueur[i].stats(attributs);
     }
 
     /*  SIMULER x VICTOIRE ALEATOIRES
@@ -62,6 +72,7 @@ int main()
 
 
     save_bdd(joueur);
+    //save_bdd_attributes(attributs);
 
 
 }

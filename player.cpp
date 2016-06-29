@@ -17,6 +17,7 @@
 using namespace std;
 
 
+
 //FONCTIONS INTERNES
 
 int Kdef(int score)  //facteur de variation de score
@@ -115,7 +116,7 @@ void Player::victory(Player &adversary)  //Victoire de A sur B
     }
 
 
-void Player::stats() const //Afficher les stats
+void Player::stats(map<string,Attribute> base_attributs) const //Afficher les stats
     {
         cout <<"\t"<< m_name << " :"<< endl << endl;
         cout << "Score : "<< m_score <<endl;
@@ -127,7 +128,9 @@ void Player::stats() const //Afficher les stats
         {
             for(int i = 0; i < m_attributs.size();i++)
             {
-                cout << "\t Attribut " << i+1 << " : " << m_attributs[i]<<endl;
+                string attr = m_attributs[i];
+                cout << "\t Attribut " << i+1 << " : ";
+                base_attributs[attr].display();
             }
         }
          cout << endl <<endl;

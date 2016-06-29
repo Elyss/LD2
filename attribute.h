@@ -19,6 +19,7 @@ class Attribute
         //METHODES
 
         void stats() const;
+        void display() const;
 
 
         //GETTERS // SETTERS

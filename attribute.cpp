@@ -23,7 +23,7 @@ Attribute::Attribute()
     //ctor
 }
 
-Attribute::Attribute(string m_name, int m_victory, int m_defeat, float m_ratio, string m_affinities, string m_disaffinities) : m_name(m_name), m_victory(m_victory), m_defeat(m_defeat), m_ratio(m_ratio), m_affinities(m_affinities)
+Attribute::Attribute(string m_name, int m_victory, int m_defeat, float m_ratio, string m_affinities, string m_disaffinities) : m_name(m_name), m_victory(m_victory), m_defeat(m_defeat), m_ratio(m_ratio), m_affinities(m_affinities), m_disaffinities(m_disaffinities)
 {
 
 }
@@ -43,4 +43,20 @@ void Attribute::stats() const
         cout << "Ratio : " <<m_ratio<<endl;
         cout << "Affinites : " <<m_affinities<<endl;
         cout << "Non affinites : " <<m_disaffinities<<endl;
+    }
+
+void Attribute::display() const
+    {
+        if(!m_name.empty())
+        {
+
+        cout <<m_name;
+        cout << " [V: " <<m_victory;
+        cout << " D: " <<m_defeat;
+        cout << " R: " <<m_ratio;
+        cout << " A: " <<m_affinities;
+        cout << " N: " <<m_disaffinities<<"]"<<endl;
+        }
+
+        else{cout<<"Inconnu"<<endl;}
     }
