@@ -111,3 +111,72 @@
 
 1467126457 c:\users\bgadil-pc\code\lionden2\attribute.h
 
+1467200452 source:c:\users\bgadil-pc\documents\github\ld2\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	<algorithm>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467200452 c:\users\bgadil-pc\documents\github\ld2\player.h
+
+1467200570 c:\users\bgadil-pc\documents\github\ld2\functions.h
+	"attribute.h"
+
+1467201161 c:\users\bgadil-pc\documents\github\ld2\attribute.h
+
+1467200452 source:c:\users\bgadil-pc\documents\github\ld2\player.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	<map>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467200452 source:c:\users\bgadil-pc\documents\github\ld2\attribute.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<sstream>
+	<map>
+	<random>
+	<algorithm>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+
+1467200760 source:c:\users\bgadil-pc\documents\github\ld2\functions.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	<map>
+	"player.h"
+	"functions.h"
+	"attribute.h"
+

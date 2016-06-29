@@ -33,3 +33,14 @@ Attribute::~Attribute()
 {
     //dtor
 }
+
+
+void Attribute::stats() const
+    {
+        cout << "nom : " <<m_name<<endl;
+        cout << "Victoires : " <<m_victory<<endl;
+        cout << "Defaites : " <<m_defeat<<endl;
+        cout << "Ratio : " <<m_ratio<<endl;
+        cout << "Affinites : " <<m_affinities<<endl;
+        cout << "Non affinites : " <<m_disaffinities<<endl;
+    }

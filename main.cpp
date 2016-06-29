@@ -25,7 +25,9 @@ int main()
 
     vector<Player> joueur = load_bdd(); //On charge la base de donnée dans un vecteur
 
-    //map<string, Attribute> attribut = load_attributes();
+    map<string, Attribute> attribut = load_attributes();
+
+    attribut["yeux verts"].stats();
 
     for(int i=0; i < joueur.size();i++)
     {

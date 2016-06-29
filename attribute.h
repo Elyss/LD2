@@ -16,6 +16,10 @@ class Attribute
 
         virtual ~Attribute();
 
+        //METHODES
+
+        void stats() const;
+
 
         //GETTERS // SETTERS
 

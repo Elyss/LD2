@@ -218,7 +218,7 @@ map<string, Attribute> load_attributes()
                     affinities = splitted[4];
                     disaffinities = splitted[5];
 
-                                        //on crée un objet joueur avec et on le met dans un array de joueurs
+                                        //on crée un objet attribut avec et on le met dans une map de joueurs
                     Atemp = new Attribute(name,victory,defeat,m_ratio,affinities,disaffinities);
                     map_attribut[name]= *Atemp;
 
