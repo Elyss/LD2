@@ -9,10 +9,9 @@
 #include <map>
 
 
+#include "attribute.h"
 #include "player.h"
 #include "functions.h"
-#include "attribute.h"
-
 
 using namespace std;
 

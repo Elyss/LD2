@@ -1,6 +1,6 @@
 #ifndef FUNCTIONS_H_INCLUDED
 #define FUNCTIONS_H_INCLUDED
-#include "attribute.h"
+
 
 bool operator==(Player const& a, Player const& b);
 bool operator!=(Player const& a, Player const& b);
