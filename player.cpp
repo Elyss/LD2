@@ -112,6 +112,12 @@ void Player::victory(Player &adversary)  //Victoire de A sur B
 
         cout << m_name << " gagne contre " << adversary.m_name << endl << endl;
 
+        //for m_attribut.size() => attribut[i].win();
+        /**                                     ==> m_victory+1
+                                                ==> m_ratio MAJ
+                                                ==> m_name vs adversary[i] + 1 for adversary.attribute.size();
+        **/
+
     }
 
 

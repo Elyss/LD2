@@ -37,8 +37,6 @@ int main()
 
     afficher_map(attributs);
 
-    attributs["yeux verts"].setVictory(15);
-
 
     for(int i=0; i < joueur.size();i++)
     {
