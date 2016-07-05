@@ -212,13 +212,11 @@ map<string, Attribute> load_attributes()
                     //stocker les info splittées dans les variables correspondantes
 
                     name = splitted[0];
-                    victory = std::stoi(splitted[1]);
-                    defeat = std::stoi(splitted[2]);
-                    m_ratio = std::stof(splitted[3]);
+                    victory = stoi(splitted[1]);
+                    defeat = stoi(splitted[2]);
+                    m_ratio = stof(splitted[3]);
                     affinities = splitted[4];
                     disaffinities = splitted[5];
-
-                    cout<<m_ratio<<endl;
 
                                         //on crée un objet attribut avec et on le met dans une map de joueurs
                     Atemp = new Attribute(name,victory,defeat,m_ratio,affinities,disaffinities);
@@ -238,28 +236,28 @@ map<string, Attribute> load_attributes()
                 cout << "Impossible d'ouvrir le fichier attributs!" << endl;
 }
 
-/*
-void save_bdd(map<string,Attribute> attributs)
+
+void save_bdd_attributes(map<string,Attribute> attributs)
     {
-        ofstream fichier_save("attributs.csv", ios::out | ios::trunc);
+        ofstream fichier_save("attributes.csv", ios::out | ios::trunc);
             if(fichier_save)
             {
-                for(int i=0; i < attributs.size();i++)
-                {
-                    string recompose = i_to_string(joueur[i].getId()) + ";" + joueur[i].getName() + ";" + f_to_string(joueur[i].getScore()) + ";" + i_to_string(joueur[i].getVictory()) + ";" + f_to_string(joueur[i].getDefeat()) + joueur[i].getAttributs();
 
+                map<string, Attribute>::iterator p; //Création d'un itérator sur le 'map'
+                for(p = attributs.begin(); p != attributs.end(); p++)
+                    {
+                        string recompose = p->second.getName() + ";" + i_to_string(p->second.getVictory()) + ";" + i_to_string(p->second.getDefeat()) + ";" + f_to_string(p->second.getRatio()) + ";" + p->second.getAffinities() + ";" + p->second.getDisaffinities();
+                        fichier_save << recompose <<endl;
 
-
-                    fichier_save << recompose << endl;
-                }
+                    }
 
                 fichier_save.close();
-                cout << "Base mise a jour" <<endl;
+                cout << "Base attributs mise a jour" <<endl;
             }
 
             else
             {
-                cout << "echec de la sauvegarde" <<endl;
+                cout << "echec de la sauvegarde des attributs" <<endl;
             }
+    }
 
-*/

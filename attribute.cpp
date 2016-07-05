@@ -59,3 +59,43 @@ void Attribute::display() const
 
         else{cout<<"Inconnu"<<endl;}
     }
+
+
+
+string Attribute::getName() const
+{
+    return m_name;
+}
+
+int Attribute::getVictory() const
+{
+    return m_victory;
+}
+
+int Attribute::getDefeat() const
+{
+    return m_defeat;
+}
+
+float Attribute::getRatio() const
+{
+    return m_ratio;
+}
+
+string Attribute::getAffinities() const
+{
+    return m_affinities;
+}
+
+string Attribute::getDisaffinities() const
+{
+    return m_disaffinities;
+}
+
+
+
+void Attribute::setVictory(int nb)
+{
+    m_victory = nb;
+}
+

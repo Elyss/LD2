@@ -22,7 +22,18 @@ class Attribute
         void display() const;
 
 
-        //GETTERS // SETTERS
+        //GETTERS
+
+        std::string getName() const;
+        int getVictory() const;
+        int getDefeat() const;
+        float getRatio() const;
+        std::string getAffinities() const;
+        std::string getDisaffinities() const;
+
+        // SETTERS
+
+        void setVictory(int nb);
 
 
 
