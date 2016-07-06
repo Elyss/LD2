@@ -20,7 +20,7 @@ class Player
 
     //Methodes
 
-    void victory(Player &adversary);
+    void victory(Player &adversary, std::map<std::string, Attribute> &base_attributs);
     void stats(std::map<std::string, Attribute> base_attributs) const;
 
     int getId() const;

@@ -34,6 +34,8 @@ class Attribute
         // SETTERS
 
         void setVictory(int nb);
+        void victory();
+        void defeat();
 
 
 

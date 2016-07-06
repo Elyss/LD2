@@ -60,6 +60,19 @@ void Attribute::display() const
         else{cout<<"Inconnu"<<endl;}
     }
 
+void Attribute::victory()
+    {
+        m_victory+=1;
+        m_ratio = ((float)m_victory / (float)(m_victory + m_defeat));
+    }
+
+void Attribute::defeat()
+    {
+        m_defeat+=1;
+        m_ratio = ((float)m_victory / (float)(m_victory + m_defeat));
+    }
+
+
 
 
 string Attribute::getName() const

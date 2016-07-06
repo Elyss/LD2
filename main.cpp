@@ -43,14 +43,14 @@ int main()
         joueur[i].stats(attributs);
     }
 
-    /*  SIMULER x VICTOIRE ALEATOIRES
+
     int start = 0;
     int bound = joueur.size();
 
     srand(time(NULL)); // outside the loop
-    int nb_simul = 1000;
+    int nb_simul = 10;
 
-    for(int n=start; n<=nb_simul; n++)
+    for(int n=start; n<nb_simul; n++)
      {
          int nb1;
          int nb2;
@@ -64,11 +64,10 @@ int main()
 
 
 
-         joueur[nb1].victory(joueur[nb2]);
+         joueur[nb1].victory(joueur[nb2], attributs);
      }
 
-     */
-
+    afficher_map(attributs);
 
     save_bdd(joueur);
     save_bdd_attributes(attributs);

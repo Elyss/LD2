@@ -93,7 +93,7 @@ Player::~Player()
 // METHODES
 
 
-void Player::victory(Player &adversary)  //Victoire de A sur B
+void Player::victory(Player &adversary, map<string,Attribute> &base_attributs)  //Victoire de A sur B
     {
         int K = Kdef(m_score);
 
@@ -111,6 +111,25 @@ void Player::victory(Player &adversary)  //Victoire de A sur B
         adversary.m_defeat += 1;
 
         cout << m_name << " gagne contre " << adversary.m_name << endl << endl;
+
+        if(m_attributs.size() > 0)
+        {
+            for(int i = 0; i < m_attributs.size();i++)
+            {
+                string attr = m_attributs[i];
+                base_attributs[attr].victory();
+            }
+        }
+
+        if(adversary.m_attributs.size() > 0)
+        {
+            for(int i = 0; i < adversary.m_attributs.size();i++)
+            {
+                string attr = adversary.m_attributs[i];
+                base_attributs[attr].defeat();
+            }
+        }
+
 
         //for m_attribut.size() => attribut[i].win();
         /**                                     ==> m_victory+1
