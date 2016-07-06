@@ -7,11 +7,13 @@
 #include <ctime> // Pour le Random
 #include <cstdlib> // Pour le random
 #include <map>
+#include <algorithm>
 
 
 #include "attribute.h"
 #include "player.h"
 #include "functions.h"
+#include "bdd_functions.h"
 
 using namespace std;
 
@@ -117,7 +119,10 @@ void Player::victory(Player &adversary, map<string,Attribute> &base_attributs)  
             for(int i = 0; i < m_attributs.size();i++)
             {
                 string attr = m_attributs[i];
-                base_attributs[attr].victory();
+                if(std::find(adversary.m_attributs.begin(), adversary.m_attributs.end(), attr)== adversary.m_attributs.end())
+                {
+                    base_attributs[attr].victory();
+                }
             }
         }
 
@@ -126,16 +131,12 @@ void Player::victory(Player &adversary, map<string,Attribute> &base_attributs)  
             for(int i = 0; i < adversary.m_attributs.size();i++)
             {
                 string attr = adversary.m_attributs[i];
-                base_attributs[attr].defeat();
+                if(std::find(m_attributs.begin(), m_attributs.end(), attr)== m_attributs.end())
+                {
+                    base_attributs[attr].defeat();
+                }
             }
         }
-
-
-        //for m_attribut.size() => attribut[i].win();
-        /**                                     ==> m_victory+1
-                                                ==> m_ratio MAJ
-                                                ==> m_name vs adversary[i] + 1 for adversary.attribute.size();
-        **/
 
     }
 

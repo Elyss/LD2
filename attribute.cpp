@@ -14,6 +14,7 @@
 #include "attribute.h"
 #include "player.h"
 #include "functions.h"
+#include "bdd_functions.h"
 
 using namespace std;
 

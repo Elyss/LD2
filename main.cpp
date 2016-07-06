@@ -15,6 +15,7 @@
 #include "attribute.h"
 #include "player.h"
 #include "functions.h"
+#include "bdd_functions.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ void afficher_map(map<string, Attribute>& m)
   {
     p->second.display();
   }
+  cout<<endl;
 
 }
 

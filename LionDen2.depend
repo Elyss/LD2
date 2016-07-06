@@ -111,7 +111,7 @@
 
 1467126457 c:\users\bgadil-pc\code\lionden2\attribute.h
 
-1467794876 source:c:\users\bgadil-pc\documents\github\ld2\main.cpp
+1467797338 source:c:\users\bgadil-pc\documents\github\ld2\main.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -127,10 +127,11 @@
 	"attribute.h"
 	"player.h"
 	"functions.h"
+	"bdd_functions.h"
 
 1467794770 c:\users\bgadil-pc\documents\github\ld2\player.h
 
-1467726164 c:\users\bgadil-pc\documents\github\ld2\functions.h
+1467797338 c:\users\bgadil-pc\documents\github\ld2\functions.h
 
 1467794701 c:\users\bgadil-pc\documents\github\ld2\attribute.h
 
@@ -148,7 +149,7 @@
 	"player.h"
 	"functions.h"
 
-1467795439 source:c:\users\bgadil-pc\documents\github\ld2\attribute.cpp
+1467797338 source:c:\users\bgadil-pc\documents\github\ld2\attribute.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -164,8 +165,9 @@
 	"attribute.h"
 	"player.h"
 	"functions.h"
+	"bdd_functions.h"
 
-1467733488 source:c:\users\bgadil-pc\documents\github\ld2\functions.cpp
+1467799635 source:c:\users\bgadil-pc\documents\github\ld2\functions.cpp
 	<iostream>
 	<fstream>
 	<string>
@@ -175,7 +177,27 @@
 	<ctime>
 	<sstream>
 	<map>
+	<algorithm>
 	"attribute.h"
 	"player.h"
 	"functions.h"
+	"bdd_functions.h"
+
+1467797338 c:\users\bgadil-pc\documents\github\ld2\bdd_functions.h
+
+1467799635 source:c:\users\bgadil-pc\documents\github\ld2\bdd_functions.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	<map>
+	<algorithm>
+	"attribute.h"
+	"player.h"
+	"functions.h"
+	"bdd_functions.h"
 
